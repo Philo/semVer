@@ -10,12 +10,12 @@ namespace HelloWorld
     {
         public string Greet(string name)
         {
-            return $@"Hello {name}";
+            return string.Format("Hello {0}", name);
         }
 
         public string Leave(string name)
         {
-            return $@"Goodbye {name}";
+            return string.Format("Goobye {0}!", name);
         }
     }
 }
